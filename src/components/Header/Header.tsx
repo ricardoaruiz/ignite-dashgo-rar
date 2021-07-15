@@ -2,6 +2,7 @@ import React from 'react'
 import { Flex } from '@chakra-ui/react'
 import { Logo } from './Logo/Logo'
 import { InputSearch } from './InputSearch/InputSearch'
+import { Info } from './Info/Info'
 
 export const Header = () => {
   return (
@@ -17,6 +18,7 @@ export const Header = () => {
     >
       <Logo />
       <InputSearch />
+      <Info />
     </Flex>
   )
 }
