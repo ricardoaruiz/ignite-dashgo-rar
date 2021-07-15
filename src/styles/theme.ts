@@ -1,7 +1,8 @@
-// https://chakra-ui.com/docs/theming/theme](https://chakra-ui.com/docs/theming/theme
-// https://chakra-ui.com/docs/theming/customize-theme](https://chakra-ui.com/docs/theming/customize-theme
-// https://chakra-ui.com/docs/theming/customize-theme#customizing-global-styles](https://chakra-ui.com/docs/theming/customize-theme#customizing-global-styles
-// https://chakra-ui.com/docs/theming/customize-theme#customizing-theme-tokens](https://chakra-ui.com/docs/theming/customize-theme#customizing-theme-tokens
+// https://chakra-ui.com/docs/theming/theme
+// https://chakra-ui.com/docs/theming/customize-theme
+// https://chakra-ui.com/docs/theming/customize-theme#customizing-global-styles
+// https://chakra-ui.com/docs/theming/customize-theme#customizing-theme-tokens
+// https://chakra-ui.com/docs/theming/theme#typography
 import { extendTheme } from '@chakra-ui/react'
 
 export const theme = extendTheme({
