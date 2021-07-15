@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
-import { Logo } from './Logo'
-import { InputSearch } from './InputSearch'
+import { Logo } from './Logo/Logo'
+import { InputSearch } from './InputSearch/InputSearch'
 
 export const Header = () => {
   return (
