@@ -1,12 +1,18 @@
 import React from 'react'
+import { Flex } from '@chakra-ui/react'
+
 import { Header } from '../components/Header'
+import { Sidebar } from '../components/Sidebar/Sidebar'
 
 const Dashboard = () => {
   return (
-    <>
+    <Flex direction="column" h="100vh">
       <Header />
-      <h2>Dashboard</h2>
-    </>
+
+      <Flex my="6" mx="auto" px="6" w="100%" maxWidth={1480}>
+        <Sidebar />
+      </Flex>
+    </Flex>
   )
 }
 
