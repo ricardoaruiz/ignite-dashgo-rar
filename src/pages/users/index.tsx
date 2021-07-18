@@ -17,6 +17,7 @@ import {
 import { Header } from '../../components'
 import { Sidebar } from '../../components/Sidebar/Sidebar'
 import { RiAddLine, RiPencilLine } from 'react-icons/ri'
+import Pagination from '../../components/Pagination/Pagination'
 
 const UsersPage = () => {
   return (
@@ -135,6 +136,8 @@ const UsersPage = () => {
               </Tr>
             </Tbody>
           </Table>
+
+          <Pagination />
         </Box>
       </Flex>
     </Box>
