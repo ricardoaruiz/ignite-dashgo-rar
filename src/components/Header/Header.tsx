@@ -1,8 +1,9 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
 import { Logo } from './Logo/Logo'
-import { InputSearch } from './InputSearch/InputSearch'
-import { Info } from './Info/Info'
+import { Notifications } from './Notifications/Notifications'
+import { Profile } from './Profile/Profile'
+import { SearchBox } from './SearchBox/SearchBox'
 
 export const Header = () => {
   return (
@@ -17,8 +18,12 @@ export const Header = () => {
       alignItems="center"
     >
       <Logo />
-      <InputSearch />
-      <Info />
+      <SearchBox />
+
+      <Flex alignItems="center" ml="auto">
+        <Notifications />
+        <Profile />
+      </Flex>
     </Flex>
   )
 }

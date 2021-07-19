@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex, Icon, Input } from '@chakra-ui/react'
 import { BiSearchAlt } from 'react-icons/bi'
 
-export const InputSearch = () => {
+export const SearchBox = () => {
   return (
     <Flex
       as="label"
