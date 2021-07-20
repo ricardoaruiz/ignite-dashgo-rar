@@ -5,7 +5,7 @@ import { PaginationButton } from './PaginationButton/PaginationButton'
 const Pagination = () => {
   return (
     <Stack
-      direction="row"
+      direction={['column', 'row']}
       mt="8"
       justifyContent="space-between"
       alignItems="center"
