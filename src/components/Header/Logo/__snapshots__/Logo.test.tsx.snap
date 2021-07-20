@@ -34,7 +34,7 @@ exports[`<Logo /> shoud be render correctly by snapshot 1`] = `
   </div>
   <div>
     <p
-      class="chakra-text css-1y2sdv1"
+      class="chakra-text css-eytimy"
     >
       dashgo
       <span
