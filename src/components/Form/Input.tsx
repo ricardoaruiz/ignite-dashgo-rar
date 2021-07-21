@@ -4,18 +4,23 @@ import {
   Input as ChakraInput,
   InputProps as ChakraInputProps,
 } from '@chakra-ui/react'
+import { ForwardRefRenderFunction } from 'react'
+import { forwardRef } from 'react'
 
 type InputProps = {
   label?: string
 } & ChakraInputProps
 
-export const Input = ({ label, ...rest }: InputProps) => {
+const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
+  { label, ...rest },
+  ref
+) => {
+  console.log(rest.id)
   return (
     <FormControl>
       {label && <FormLabel htmlFor={rest.id}>{label}</FormLabel>}
 
       <ChakraInput
-        {...rest}
         focusBorderColor="pink.500"
         bgColor="gray.900"
         variant="filled"
@@ -23,9 +28,11 @@ export const Input = ({ label, ...rest }: InputProps) => {
         _hover={{
           bgColor: 'gray.900',
         }}
+        ref={ref}
+        {...rest}
       />
     </FormControl>
   )
 }
 
-export default Input
+export const Input = forwardRef(InputBase)
