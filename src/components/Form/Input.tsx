@@ -4,7 +4,6 @@ import {
   FormLabel,
   Input as ChakraInput,
   InputProps as ChakraInputProps,
-  Text,
 } from '@chakra-ui/react'
 import { ForwardRefRenderFunction } from 'react'
 import { forwardRef } from 'react'
@@ -30,6 +29,9 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
         size="lg"
         _hover={{
           bgColor: 'gray.900',
+        }}
+        _invalid={{
+          borderColor: 'red.600',
         }}
         ref={ref}
         {...rest}
